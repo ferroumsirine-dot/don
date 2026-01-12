@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>S'inscrire - Don de Sang</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+      <a href="inscription.html"><i class="fas fa-user-plus"></i> S'inscrire</a>
+      <a href="formulaire.html"><i class="fas fa-file-alt"></i> Formulaire</a>
+      <a href="hopitaux.html"><i class="fas fa-hospital"></i> Hôpitaux</a>
+      <a href="demandes.php"><i class="fas fa-list"></i> Demandes</a>
+      <a href="statistiques.php"
+        ><i class="fas fa-chart-bar"></i> Statistiques</a
+      >
+      <a href="apropos.html"><i class="fas fa-info-circle"></i> À propos</a>
+    </nav>
+
+    <section class="registration">
+      <h1>Inscription Donneur</h1>
+      <form id="donorForm">
+        <div class="form-group">
+          <label for="name">Nom complet:</label>
+          <input type="text" id="name" name="name" />
+          <span class="error-message" id="error-name"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <span class="error-message" id="error-email"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Téléphone:</label>
+          <input type="tel" id="phone" name="phone" />
+          <span class="error-message" id="error-phone"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="blood">Groupe sanguin:</label>
+          <select id="blood" name="blood">
+            <option value="">--Choisir--</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+          <span class="error-message" id="error-blood"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="wilaya">Wilaya:</label>
+          <input type="text" id="wilaya" name="wilaya" />
+          <span class="error-message" id="error-wilaya"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">Envoyer</button>
+      </form>
+
+      <div id="form-message" style="margin-top: 10px; font-weight: bold"></div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Don de Sang. Tous droits réservés.</p>
+      <p>Contact: contact@dondesang.com | Téléphone: 0555 123 456</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
